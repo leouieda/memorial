@@ -1,11 +1,24 @@
-# Memorial Acadêmico - 2023
+# Memorial acadêmico
 
-Meu memorial escrito para o concurso público de títulos e provas para cargo de
-Professor Doutor junto ao Departamento de Geofísica do Instituto de Astronomia,
-Geofísica e Ciências Atmosféricas da Universidade de São Paulo
-(Edital ATAc-IAG/044/2022).
+Esse é meu memorial escrito para ao longo dos anos para diversos concursos
+usando LaTeX e um modelo próprio.
+Sinta-se a vontade para reutilizá-lo e se apropriar de qualquer parte do código
+(mas não do texto em si, por favor) se atentando aos termos da licença abaixo.
 
-[📝 Versão em PDF](https://github.com/leouieda/memorial2023/raw/gh-pages/memorial.pdf)
+## Versões
+
+A pasta `pdf` guarda versões arquivadas do PDF gerado pelo código e utilizada
+em diferentes concursos:
+
+* `memorial2023.pdf`: Utilizado no concurso público de títulos e provas para
+  cargo de Professor Doutor junto ao Departamento de Geofísica do Instituto de
+  Astronomia, Geofísica e Ciências Atmosféricas da Universidade de São Paulo
+  (Edital ATAc-IAG/044/2022). **Fui aprovado nesse concurso e assumi o cargo.**
+* `memorial2017.pdf`: Utilizado no concurso público de títulos e provas para
+  cargo de Professor Doutor junto ao Departamento de Geofísica do Instituto de
+  Astronomia, Geofísica e Ciências Atmosféricas da Universidade de São Paulo
+  (Edital ATAc-IAG/018/2017). **Desisti desse concurso antes da realização das
+  provas.**
 
 ## License
 
