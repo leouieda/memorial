@@ -121,10 +121,14 @@
 
 \newcommand{\GMTLink}{\href{https://www.generic-mapping-tools.org}{Generic Mapping Tools}}
 \newcommand{\CompGeoLabLink}{\href{https://www.compgeolab.org/}{Computer-Oriented Geoscience Lab}}
-\newcommand{\SwunngLink}{\href{https://softwareunderground.org/}{Software Underground}}
+\newcommand{\SwungLink}{\href{https://softwareunderground.org/}{Software Underground}}
 \newcommand{\FatiandoLink}{\href{https://www.fatiando.org}{Fatiando a Terra}}
 \newcommand{\PyGMTLink}{\href{https://www.pygmt.org}{PyGMT}}
 \newcommand{\SSILink}{\href{https://software.ac.uk/}{Software Sustainability Institute}}
+\newcommand{\JOSSLink}{\href{https://joss.theoj.org/}{Journal of Open Source Software}}
+\newcommand{\PyOSciLink}{\href{https://www.pyopensci.org/}{pyOpenSci}}
+\newcommand{\EarthArXivLink}{\href{https://eartharxiv.org/}{EarthArXiv}}
+\newcommand{\RBRLink}{\href{https://www.reprodutibilidade.org/}{Rede Brasileira de Reprodutibilidade}}
 
 % Import packages
 \usepackage[utf8]{inputenc}
@@ -348,9 +352,9 @@
 
 % Configure headers and footers
 \fancyhf{}
-\lhead{\fontsize{9pt}{0}\selectfont\itshape \nouppercase\leftmark}
+\lhead{\fontsize{9pt}{0}\selectfont \nouppercase\leftmark | \Title{}}
 \chead{}
-\rhead{\fontsize{9pt}{0}\selectfont \thepage}
+\rhead{\fontsize{9pt}{0}\selectfont \Author{} | \thepage}
 \cfoot{}
 \renewcommand{\headrulewidth}{0.3pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -404,21 +408,18 @@
 
 \vspace*{\fill}
 
-\noindent \textit{\TitlePDF{}}
-\\
-por \Author{}
-\\
-doi:\href{https://doi.org/\MemorialDOI}{\MemorialDOI}
-
-\vspace{1.5cm}
-
 \noindent
+\textit{\TitlePDF{}}.
+\\[0.2cm]
+\textcopyright{} Copyright \Year{} \Author{}.
+\\[0.2cm]
 Última modificação em \today.
+doi:\href{https://doi.org/\MemorialDOI}{\MemorialDOI}.
 
-\vspace{1.5cm}
+\vspace{2.5cm}
 
 \noindent
-\textbf{\large \faCreativeCommons{}\faCreativeCommonsBy{}}
+\textbf{\LARGE \faCreativeCommons{} \faCreativeCommonsBy{}}
 \\
 Disponível sob a
 \textbf{Licença Creative Commons Atribuição 4.0 Internacional}.
@@ -460,7 +461,7 @@ De acordo com os termos seguintes:
 }
 \end{description}
 
-\vspace{3cm}
+\vspace{1.5cm}
 
 }
 
@@ -473,47 +474,51 @@ e Doutorado em Geofísica pelo \ON{}.
 Ao longo da minha formação e carreira, passei por seis instituições de ensino
 superior em quarto países diferentes.
 Trabalhei como Professor Assistente na \UERJ{},
-Professor Visitante na \UHM{} e atualmente sou Lecturer (equivalente a
-Professor Doutor) na \UoL{}.
-Ministrei 10 disciplinas diferentes a nível de graduação e 17 cursos de curta
+Professor Visitante na \UHM{}, \textit{Lecturer} (equivalente a
+Professor Doutor) na \UoL{} e
+atualmente sou Professor Doutor no Departamento de Geofísica do \IAG{} da
+\USP{}.
+Ministrei 14 disciplinas diferentes a nível de graduação,
+3 a nível de pós-graduação e 18 cursos de curta
 duração abrangendo uma gama de tópicos da geofísica, geologia e programação.
-Sou autor de 16 artigos científicos que agregam mais de 1700
-citações\footnote{Segundo Google Scholar em 27/12/2022: \url{https://scholar.google.com/citations?user=qfmPrUEAAAAJ}}.
+Sou autor de 18 artigos científicos que agregam mais de 3700
+citações\footnote{Segundo Google Scholar em 2025-04-06: \url{https://scholar.google.com/citations?user=qfmPrUEAAAAJ}}.
 Atuo na área de ciência aberta e reprodutibilidade desde meu primeiro artigo
 publicado em 2012 durante meu Mestrado.
 Desenvolvo diversos projetos de software livre para ciência, dentre eles
-\href{https://www.fatiando.org/}{Fatiando a Terra},
-\href{https://tesseroids.leouieda.com}{Tesseroids}
-e
-\href{https://www.generic-mapping-tools.org/}{Generic Mapping Tools},
+\FatiandoLink{}, \href{https://tesseroids.leouieda.com}{Tesseroids}
+e \GMTLink{},
 que podem chegar a ter centenas de milhares de downloads
 mensais\footnote{Por exemplo, o software
 \href{https://github.com/fatiando/pooch}{Pooch} que é parte do Fatiando a
 Terra: \url{https://pypistats.org/packages/pooch}}.
 Sou reconhecido por minha expertise em Geociências, ciência aberta e
 desenvolvimento de software livre, tendo servido como editor do
-\href{https://joss.theoj.org/}{Journal of Open Source Software} e na
-coordenação das organizações internacionais
-\href{https://eartharxiv.org/}{EarthArXiv},
-\href{https://www.pyopensci.org/}{pyOpenSci}
-e \href{https://softwareunderground.org}{Software Underground}.
+\JOSSLink{} e na
+coordenação das organizações
+\EarthArXivLink{},
+\PyOSciLink{},
+\SwungLink{}
+e \RBRLink.
+Em 2020, fundei o \CompGeoLabLink{}, um grupo de pesquisa com foco no
+desenvolvimento metodológico em métodos potenciais, geofísica computacional
+e software livre.
 
 Este memorial apresenta minha formação e atuação profissional, incluindo
 reflexões sobre os fatores que me trouxeram até onde estou e as lições que
 aprendi ao longo do caminho.
 Além disso, o memorial também relata meus planos futuros para meu
-desenvolvimento profissional e a minha motivação para retornar à Universidade
-de São Paulo, onde iniciei minha trajetória 19 anos atrás.
+desenvolvimento profissional e a direção na qual pretendo guiar meu grupo de
+pesquisa.
 
 \begin{figure}[tb]
   \begin{center}
     \includegraphics[width=\textwidth]{images/timeline.pdf}
   \end{center}
   \caption*{
-    Linha do tempo (fora de escala) resumindo minha trajetória acadêmica, desde
-    o início do meu curso de Bacharelado em Geofísica na Universidade de São
-    Paulo em 2004 até meu cargo de Lecturer na \UoL{} de 2019
-    até o presente.
+    \textbf{Linha do tempo} (fora de escala) resumindo minha trajetória
+    acadêmica, desde o início do meu curso de Bacharelado em Geofísica na
+    \USP{} em 2004 até meu retorno à \USP{} em 2023.
   }
 \end{figure}
 
@@ -3177,7 +3182,7 @@ de seus resultados e aplicações indevidas encontradas na literatura
 \citep{Reid2014}.
 Estava com isso em mente quando fui convidado pelo
 \href{https://github.com/kwinkunks}{Matt Hall}, fundador do
-\SwunngLink{} (seção~\ref{sec_swung}), para escrever um tutorial de acesso
+\SwungLink{} (seção~\ref{sec_swung}), para escrever um tutorial de acesso
 aberto na revista \href{https://library.seg.org/loi/leedff}{The Leading Edge}.
 O Matt estava organizando uma série de tutoriais para explicar conceitos de
 geofísica aplicada utilizando ferramentas de software livre.
