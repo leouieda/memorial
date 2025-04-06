@@ -9,14 +9,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Set a class and import packages
-\documentclass[11pt,a4paper,oneside]{book}
+\documentclass[12pt,a4paper,oneside]{book}
 
 % Variables
-\newcommand{\Year}{2023}
+\newcommand{\Year}{2025}
 \newcommand{\Author}{Leonardo Uieda}
-\newcommand{\Title}{Memorial de \Author{} para concurso público - Professor Doutor em Geofísica - IAG/USP}
+\newcommand{\Title}{Memorial circunstanciado}
+\newcommand{\TitlePDF}{Memorial circunstanciado para concurso visando obtenção do título de Livre Docente no IAG - Universidade de São Paulo, Edital ATAc-IAG/005/2025}
+\newcommand{\MemorialDOI}{10.6084/m9.figshare.28737800}
 \newcommand{\Email}{uieda@usp.br}
-\newcommand{\EmailPersonal}{leo@uieda.com}
 \newcommand{\ORCID}{0000-0001-6123-9515}
 \newcommand{\ResearcherID}{G-3258-2012}
 \newcommand{\GoogleScholar}{qfmPrUEAAAAJ}
@@ -26,6 +27,7 @@
 \newcommand{\USP}{Universidade de São Paulo}
 \newcommand{\IAG}{Instituto de Astronomia, Geofísica e Ciências Atmosféricas}
 \newcommand{\UoL}{University of Liverpool}
+\newcommand{\ON}{Observatório Nacional}
 \newcommand{\UHM}{University of Hawai`i at M\={a}noa}
 \newcommand{\UERJ}{Universidade do Estado do Rio de Janeiro}
 \newcommand{\Trieste}{Università degli studi di Trieste}
@@ -178,8 +180,8 @@
 % Configuration of the document
 
 \geometry{%
-  left=25mm,
-  right=25mm,
+  left=20mm,
+  right=20mm,
   top=20mm,
   bottom=15mm,
   headsep=5mm,
@@ -332,7 +334,7 @@
 \hypersetup{
     colorlinks,
     allcolors=lu_blue,
-    pdftitle={\Title},
+    pdftitle={\TitlePDF},
     pdfauthor={\Author},
     pdftex,
     breaklinks=true,
@@ -359,52 +361,120 @@
 \pagestyle{plain}
 \frontmatter
 
+
+%==============================================================================
 \begin{titlepage}
   \begin{center}
-    \includegraphics[height=2cm]{images/logo.pdf}
+    \includegraphics[height=1.5cm]{images/usp.png}
+    \hspace{1cm}
+    \includegraphics[height=1.5cm]{images/iag.png}
     \vspace{1cm}
-
-    CONCURSO PÚBLICO
-
-    PROFESSOR DOUTOR (RDIDP) EM MÉTODOS POTENCIAIS
 
     UNIVERSIDADE DE SÃO PAULO
+
+    INSTITUTO DE ASTRONOMIA, GEOFÍSICA E CIÊNCIAS ATMOSFÉRICAS
     \vspace{5cm}
 
-    \textbf{\LARGE MEMORIAL}
-    \vspace{1cm}
+    \textbf{\huge \MakeUppercase{\Title}}
+    \vspace{2cm}
 
-    \textbf{\LARGE \MakeUppercase{\Author{}}}
+    {\Large \Author}
     \vspace{5cm}
 
     {\small
-      Apresentado para concurso público de títulos e provas para cargo de
+      Apresentado para concurso títulos e provas visando a obtenção do
 
-      Professor Doutor junto ao Departamento de Geofísica do
+      título de Livre Docente junto ao Departamento de Geofísica do
 
       Instituto de Astronomia, Geofísica e Ciências Atmosféricas da
 
       Universidade de São Paulo.
       \vspace{1cm}
 
-      Edital ATAc-IAG/044/2022
+      Edital ATAc-IAG/005/2025
     }
     \vfill
 
     \Year{}
   \end{center}
 \end{titlepage}
+%==============================================================================
+
+{\small
+
+\vspace*{\fill}
+
+\noindent \textit{\TitlePDF{}}
+\\
+por \Author{}
+\\
+doi:\href{https://doi.org/\MemorialDOI}{\MemorialDOI}
+
+\vspace{1.5cm}
+
+\noindent
+Última modificação em \today.
+
+\vspace{1.5cm}
+
+\noindent
+\textbf{\large \faCreativeCommons{}\faCreativeCommonsBy{}}
+\\
+Disponível sob a
+\textbf{Licença Creative Commons Atribuição 4.0 Internacional}.
+\\
+\url{https://creativecommons.org/licenses/by/4.0/deed.pt-br}
+
+\vspace{0.25cm}
+
+\noindent
+Você tem o direito de:
+
+\begin{description}[labelindent=0.5cm]
+    \item[Compartilhar ---]{
+        Copiar e redistribuir o material em qualquer suporte ou formato para
+        qualquer fim, mesmo que comercial.
+    }
+    \item[Adaptar ---]{
+        Remixar, transformar, e criar a partir do material para qualquer fim,
+        mesmo que comercial.
+    }
+\end{description}
+
+\vspace{0.25cm}
+
+\noindent
+De acordo com os termos seguintes:
+
+\begin{description}[labelindent=0.5cm]
+    \item[Atribuição ---]{
+         Você deve dar o crédito apropriado, prover um link para a licença
+         e indicar se mudanças foram feitas. Você deve fazê-lo em qualquer
+         circunstância razoável, mas de nenhuma maneira que sugira que
+         o licenciante apoia você ou o seu uso.
+    }
+    \item[Sem restrições adicionais ---]{
+        Você não pode aplicar termos jurídicos ou medidas de caráter
+        tecnológico que restrinjam legalmente outros de fazerem algo que
+        a licença permita.
+}
+\end{description}
+
+\vspace{3cm}
+
+}
+
 
 %==============================================================================
 \chapter*{Resumo}
 
-Possuo Bacharelado em Geofísica pela Universidade de São Paulo e Mestrado
-e Doutorado em Geofísica pelo Observatório Nacional.
+Possuo Bacharelado em Geofísica pela \USP{} e Mestrado
+e Doutorado em Geofísica pelo \ON{}.
 Ao longo da minha formação e carreira, passei por seis instituições de ensino
 superior em quarto países diferentes.
 Trabalhei como Professor Assistente na \UERJ{},
 Professor Visitante na \UHM{} e atualmente sou Lecturer (equivalente a
-Professor Doutor) na University of Liverpool.
+Professor Doutor) na \UoL{}.
 Ministrei 10 disciplinas diferentes a nível de graduação e 17 cursos de curta
 duração abrangendo uma gama de tópicos da geofísica, geologia e programação.
 Sou autor de 16 artigos científicos que agregam mais de 1700
@@ -442,7 +512,7 @@ de São Paulo, onde iniciei minha trajetória 19 anos atrás.
   \caption*{
     Linha do tempo (fora de escala) resumindo minha trajetória acadêmica, desde
     o início do meu curso de Bacharelado em Geofísica na Universidade de São
-    Paulo em 2004 até meu cargo de Lecturer na University of Liverpool de 2019
+    Paulo em 2004 até meu cargo de Lecturer na \UoL{} de 2019
     até o presente.
   }
 \end{figure}
@@ -473,7 +543,6 @@ de São Paulo, onde iniciei minha trajetória 19 anos atrás.
 \begin{summarybox}[frametitle=\faInfoCircle{}\quad Informações para contato]
   \begin{fa-ul}
     \faEnvelope & email profissional: \href{mailto:\Email}{\Email} \\
-    \faEnvelope & email pessoal: \href{mailto:\EmailPersonal}{\EmailPersonal} \\
     \aiOrcid & ORCID: \href{https://orcid.org/\ORCID}{\ORCID} \\
     \aiLattes & Currículo Lattes: \url{https://lattes.cnpq.br/\Lattes} \\
     \aiPublonsSquare & ResearcherID: \href{https://www.webofscience.com/wos/author/rid/\ResearcherID}{\ResearcherID} \\
@@ -582,7 +651,7 @@ Nacional (seção~\ref{sec_on}), tanto por conta de vários membros da turma
 estarem trabalhando no Rio de Janeiro, quanto por ter meu amigo
 \href{https://www.pinga-lab.org/people/oliveira-jr.html}{Vanderlei C. Oliveira Jr.}
 comigo na pós-graduação (Vanderlei é atualmente Pesquisador Titular do
-Observatório Nacional).
+\ON{}).
 Também tive muita sorte no meu acesso a mentores excelentes:
 Manoel S. D'Agrella Filho, Ricardo I. F. Trindade e Naomi Ussami
 durante a graduação, Valéria C. F. Barbosa e Carla Braitenberg durante a
@@ -624,17 +693,19 @@ Finalmente, apresento considerações finais no capítulo~\ref{cap_conclusao}.
   \end{center}
   \caption{
     Realizando medidas da direção do campo geomagnético no observatório de
-    Vassouras, Rio de Janeiro. A atividade foi parte de uma disciplina de
-    instrumentação geofísica que cursei durante a pós-graduação do Observatório
-    Nacional.
+    Vassouras, Rio de Janeiro, em 2012. A atividade foi parte de uma disciplina
+    de instrumentação geofísica que cursei durante a pós-graduação do
+    \ON{}.
   }
 \end{figure}
 \begin{summarybox}[frametitle=\faInfoCircle{}\quad Resumo da formação acadêmica]
   \begin{datelist}
-    2004--2009 & Bacharelado em Geofísica -- Universidade de São Paulo \\
-    2008--2009 & \faPlane{} Intercâmbio Internacional -- York University, Canadá \\
-    2010--2011 & Mestrado em Geofísica -- Observatório Nacional \\
-    2011--2016 & Doutorado em Geofísica -- Observatório Nacional
+    \textbf{2004--2009} & \textbf{Bacharelado em Geofísica -- \USP{}} \\
+    2008--2009 & Intercâmbio Internacional -- York University \\
+    \textbf{2010--2011} & \textbf{Mestrado em Geofísica -- \ON{}} \\
+    \textbf{2011--2016} & \textbf{Doutorado em Geofísica -- \ON{}} \\
+    2018 & Instructor Training -- The Carpentries \\
+    2020--2022 & Postgraduate Certificate in Academic Practice -- \UoL
   \end{datelist}
 \end{summarybox}
 
@@ -642,12 +713,12 @@ Este capítulo relata a minha formação acadêmica, do Bacharelado ao Doutorado
 refletindo sobre os fatores que influenciaram minhas linhas de pesquisa e o
 rumo que tomei durante minha carreira.
 
-\section{Universidade de São Paulo}
+\section{\USP{}}
 \label{sec_usp}
 
 \begin{subsummarybox}[frametitle=\faGraduationCap{}\quad Bacharelado em Geofísica]
   \begin{fa-ul}
-    \faUniversity & Universidade de São Paulo \\
+    \faUniversity & \USP{} \\
     \faCalendar & Fevereiro 2004 -- Novembro 2009 \\
     \faUser & Orientadora: Naomi Ussami\\
     \faInfoCircle & Trabalho de conclusão: Cálculo do tensor gradiente
@@ -655,7 +726,7 @@ rumo que tomei durante minha carreira.
   \end{fa-ul}
 \end{subsummarybox}
 
-Ingressei no curso de Bacharelado em Geofísica da Universidade de São Paulo em
+Ingressei no curso de Bacharelado em Geofísica da \USP{} em
 2004.
 Já no primeiro semestre, o curso desafiou diversos de meus preconceitos sobre
 os assuntos abordados.
@@ -839,12 +910,12 @@ trabalhar diretamente no meu projeto de Mestrado pois já possuía grande parte
 da base teórica e experiência prática computacional necessária.
 Por isso, fui capaz de desenvolver um método novo em pouco tempo.
 
-\section{Observatório Nacional}
+\section{\ON{}}
 \label{sec_on}
 
 \begin{subsummarybox}[frametitle=\faGraduationCap{}\quad Mestrado em Geofísica]
   \begin{fa-ul}
-    \faUniversity & Observatório Nacional \\
+    \faUniversity & \ON{} \\
     \faCalendar & Fevereiro de 2010 -- Outubro de 2011 \\
     \faUser & Orientadora:  Valéria C. F. Barbosa\\
     \faInfoCircle & Dissertação: Robust 3D gravity gradient inversion by
@@ -853,7 +924,7 @@ Por isso, fui capaz de desenvolver um método novo em pouco tempo.
 \end{subsummarybox}
 \begin{subsummarybox}[frametitle=\faGraduationCap{}\quad Doutorado em Geofísica]
   \begin{fa-ul}
-    \faUniversity & Observatório Nacional \\
+    \faUniversity & \ON{} \\
     \faCalendar & Novembro de 2011 -- Abril de 2016 \\
     \faUser & Orientadora:  Valéria C. F. Barbosa\\
     \faInfoCircle & Tese Modelagem direta e inversão de campos gravitacionais em
@@ -876,7 +947,7 @@ diversidade de formas de pensamento que se obtém em diferentes instituições.
 Por isso, após cinco anos na USP, decidi que estava na hora de buscar uma
 pós-graduação em outra instituição no Brasil.
 
-O Observatório Nacional (ON) já havia despertado meu interesse após uma visita
+O \ON{} (ON) já havia despertado meu interesse após uma visita
 que fizemos à instituição em 2007 durante uma viagem de nossa turma de
 graduação para participar do Congresso Internacional da Sociedade Brasileira de
 Geofísica.
@@ -1011,7 +1082,7 @@ suplementar foi publicado no
 \url{https://doi.org/10.6084/m9.figshare.91469}}.
 
 Terminei meu mestrado em Outubro de 2011 (quatro meses adiantado) e ingressei
-no Doutorado em Geofísica do Observatório Nacional, ainda sob supervisão da
+no Doutorado em Geofísica do \ON{}, ainda sob supervisão da
 Valéria, logo em seguida.
 
 \subsection{Viagem para Trieste}
@@ -1156,7 +1227,7 @@ pandemia de COVID em 2020 e 2021.
 
 \begin{subsummarybox}[frametitle=\faGraduationCap{}\quad Postgraduate Certificate in Academic Practice]
   \begin{fa-ul}
-    \faUniversity & Universidade de Liverpool \\
+    \faUniversity & \UoL{} \\
     \faCalendar & Novembro de 2020 -- Maio de 2022 \\
     \faInfoCircle & Curso de pós-graduação em pedagogia no ensino superior que
     me confere o título de \textit{Fellow of the Higher Education
@@ -1202,7 +1273,7 @@ disponíveis em \url{https://www.leouieda.com/pgcap}.
   \end{center}
   \caption{
     Foto de uma apresentação que fiz para o \textit{Geographic Data Science
-    Lab} da Universidade de Liverpool em Março de 2020. O propósito da palestra
+    Lab} da \UoL{} em Março de 2020. O propósito da palestra
     foi me apresentar para o grupo pouco após minha chegada em Liverpool e
     tentar estabelecer temas para colaborações futuras.
   }
@@ -1214,7 +1285,7 @@ disponíveis em \url{https://www.leouieda.com/pgcap}.
     \textbf{2017--2019} & \textbf{Pesquisador Visitante -- \UHM, E.U.A.} \\
     2019--2022 & Topic Editor\footnote{Posição não remunerada} -- Journal of Open Source Software (voluntário) \\
     2019--2022 & Advisory Council Member\mpfootnotemark[\value{mpfootnote}] -- EarthArXiv \\
-    \textbf{2019--atual} & \textbf{Lecturer (\textit{Professor Doutor}) -- University of Liverpool, Reino Unido} \\
+    \textbf{2019--atual} & \textbf{Lecturer (\textit{Professor Doutor}) -- \UoL{}, Reino Unido} \\
     2020--atual & Fellow\mpfootnotemark[\value{mpfootnote}] -- Software Sustainability Institute \\
     2022--atual & Board Member\mpfootnotemark[\value{mpfootnote}] -- Software Underground \\
     2022--atual & Advisory Committee Member\mpfootnotemark[\value{mpfootnote}] -- pyOpenSci
@@ -1399,10 +1470,10 @@ Como eu e minha esposa sentíamos que ainda não estávamos prontos para retorna
 ao Brasil, retomei minha busca por oportunidades de emprego no exterior que
 possibilitassem um balanço melhor entre a vida pessoal e profissional.
 Foi assim que encontrei um anúncio para uma vaga na área de geofísica na
-University of Liverpool no Reino Unido.
+\UoL{} no Reino Unido.
 
 
-\section{University of Liverpool}
+\section{\UoL{}}
 \label{sec_liverpool}
 
 \begin{subsummarybox}[frametitle=\faUniversity{}\quad Vínculo institucional]
@@ -1423,7 +1494,7 @@ University of Liverpool no Reino Unido.
 Com meu financiamento para me manter nos E.U.A. chegando ao fim e um desejo de
 continuar no exterior por mais tempo, retomei minha busca por novas
 oportunidades de pós-doutorado ou uma posição permanente.
-No final de 2018 encontrei a chamada para uma vaga na University of Liverpool
+No final de 2018 encontrei a chamada para uma vaga na \UoL{}
 de Lecturer (que no Reino Unido é equivalente a Professor Doutor) na área de
 geofísica.
 Descobri que o curso de geofísica de Liverpool possui uma longa tradição e
@@ -1499,7 +1570,7 @@ geociências, infraestrutura digital da ciência (e.g., software livre
 científico) e ciência aberta.
 Fui membro da banca de trabalhos de conclusão de Doutorado e Mestrado da
 Christian-Albrechts-Universität zu Kiel (aluno Peter Haas),
-University of Liverpool (aluna Yael Annemiek Engbers)
+\UoL{} (aluna Yael Annemiek Engbers)
 e \UERJ{} (aluna Natacha Medeiros Rocha).
 Atuei como revisor dos periódicos\footnote{Mais informações em \url{https://www.webofscience.com/wos/author/rid/\ResearcherID}}:
 Geophysical Journal International,
@@ -1661,7 +1732,7 @@ complementares e tão importantes quanto publicações e aulas dadas.
 \section{Introdução}
 
 Meu primeiro contato com o movimento de \href{https://www.fsf.org/}{software livre}
-foi durante meu curso de graduação na Universidade de São Paulo (seção~\ref{sec_usp}),
+foi durante meu curso de graduação na \USP{} (seção~\ref{sec_usp}),
 onde utilizávamos computadores com o sistema GNU/Linux e o software
 \href{https://en.wikipedia.org/wiki/Seismic_Unix}{Seismic Unix} nas nossas aulas.
 Fui cativado pelo princípio de garantir a todos a liberdade para modificar e
@@ -1722,7 +1793,7 @@ Todo esse material pode ser encontrado nas diversas plataformas listadas no
     2020 &
       \Me.
       Geophysical research powered by open-source,
-      \emph{Departamento de Geofísica, IAG, Universidade de São Paulo}.
+      \emph{Departamento de Geofísica, IAG, \USP{}}.
       \GitHub{leouieda/2020-06-18-usp}.
       \YouTube{VqI8BX1Yg54}.
       \\
@@ -1742,13 +1813,13 @@ Todo esse material pode ser encontrado nas diversas plataformas listadas no
     ~ &
       \Me.
       Geophysical research powered by open-source,
-      \emph{Geographic Data Science Lab, University of Liverpool}.
+      \emph{Geographic Data Science Lab, \UoL{}}.
       \GitHub{leouieda/liverpool-gdsl-2020}.
       \\
     2019 &
       \Me.
       Building the foundations for open-source geophysics,
-      \emph{University of Liverpool}.
+      \emph{\UoL{}}.
       \DOI{10.6084/m9.figshare.10255832}.
       \\
     2017 &
@@ -1989,7 +2060,7 @@ do Fatiando a Terra), é mais rápida que a versão em C.
     2015 &
       \Me.
       Fatiando a Terra: construindo uma base para ensino e pesquisa de geofísica,
-      \emph{Universidade de São Paulo}.
+      \emph{\USP{}}.
       \DOI{10.6084/m9.figshare.1381870}
       \\
     2014 &
@@ -2479,7 +2550,7 @@ que fundei em 2018 para agregar REAs voltados à geofísica.
 No futuro, pretendo investir na criação de livros abertos na Geophysics
 Library.
 Pretendo utilizar para isso o material didático que desenvolvi para minhas
-disciplinas da University of Liverpool e da UERJ.
+disciplinas da \UoL{} e da UERJ.
 Tenho planos de organizar outras edições do Geo+Code internacionalmente,
 para as quais já possuo parceiros interessados no
 \href{https://www.icrag-centre.org/}{iCRAG} na Irlanda e na
@@ -2602,7 +2673,7 @@ cronológica com as últimas sendo as linhas mais recentemente abertas.
 \end{subsummarybox}
 
 Esta foi minha primeira linha de pesquisa, iniciada durante meu trabalho de
-conclusão de curso de Bacharelado em Geofísica na Universidade de São Paulo
+conclusão de curso de Bacharelado em Geofísica na \USP{}
 (seção~\ref{sec_usp}).
 A motivação inicial para explorar essa linha foi o lançamento do satélite
 GOCE, que efetuou medidas dos gradientes da gravidade em uma resolução espacial
@@ -2784,7 +2855,7 @@ minha coorientação do Santiago.
   \end{paperlist}
 \end{subsummarybox}
 
-Minha pesquisa nessa linha começou com meu mestrado no Observatório Nacional
+Minha pesquisa nessa linha começou com meu mestrado no \ON{}
 (seção~\ref{sec_on}).
 O salto de 2D para 3D nos métodos de inversão que discretizam subsuperfície em
 elementos geométricos, como prismas retangulares retos, causou um aumento
@@ -2999,7 +3070,7 @@ fontes equivalentes.
 
 Minha primeira contribuição nessa linha de pesquisa surgiu durante uma conversa
 com meu amigo \VanderleiLink{} em um bar de São Cristóvão, Rio de Janeiro.
-Na época, estávamos fazendo nosso doutorado no Observatório Nacional
+Na época, estávamos fazendo nosso doutorado no \ON{}
 (seção~\ref{sec_on}) e dividíamos um apartamento.
 Essas conversas eram frequentes e creio serem a fonte de meu entendimento de
 diversos conceitos de métodos potenciais e problemas inversos em geofísica.
@@ -3356,7 +3427,7 @@ com o mesmo grupo de pesquisa da USP.
   \begin{fa-ul}
     \faUserGraduate & Alunos envolvidos: India Uppal (PhD) \\
     \faGlobeAmericas & País dos colaboradores: Brasil, Reino Unido \\
-    \faSearchDollar & Financiamento: University of Liverpool (bolsa de doutorado)
+    \faSearchDollar & Financiamento: \UoL{} (bolsa de doutorado)
   \end{fa-ul}
 \end{summarybox}
 
@@ -3382,7 +3453,7 @@ os trabalhos feitos pelo grupo do Professor
 particularmente o artigo \citet{Losing2020} da aluna
 \href{https://www.satellitengeophysik.uni-kiel.de/de/mitarbeiter/mareen_loesing}{Mareen Lösing}.
 Propus um projeto de doutorado no assunto, que seria financiado pela School of
-Environmental Sciences da University of Liverpool, para ter a oportunidade de
+Environmental Sciences da \UoL{}, para ter a oportunidade de
 me aprofundar mais na área.
 No final de 2021, a aluna \IndiaLink{} iniciou seu trabalho nesse projeto sob
 minha orientação e sob coorientação dos Professores \VanderleiLink{} e
@@ -3465,7 +3536,7 @@ disponíveis para os alunos.
 Este capítulo relata minhas atividades de ensino, mentoria e extensão,
 incluindo minha abordagem pedagógica e meu papel na criação e ministração de
 disciplinas de graduação.
-Minha atuação como coordenador do curso de graduação na University of Liverpool
+Minha atuação como coordenador do curso de graduação na \UoL{}
 é discutida na seção~\ref{sec_liverpool}.
 
 \section{Orientações}
@@ -3523,9 +3594,9 @@ Santiago é um pesquisador brilhante, um engenheiro de software excepcional
 e um verdadeiro amigo.
 
 Iniciei minha segunda experiência de orientação a nível de doutorado em 2021
-com a aluna \IndiaLink{} da University of Liverpool, coorientada pelo Professor
+com a aluna \IndiaLink{} da \UoL{}, coorientada pelo Professor
 \href{https://www.pinga-lab.org/people/oliveira-jr.html}{Vanderlei C. Oliveira Jr.}
-do Observatório Nacional e pelo Professor
+do \ON{} e pelo Professor
 \href{https://www.liverpool.ac.uk/~holme/}{Richard Holme} da University of
 Liverpool.
 A India foi nossa aluna do curso de Bacharelado em Geofísica de Liverpool e era
@@ -3555,7 +3626,7 @@ Seu projeto ainda está em fase inicial mas tenho certeza de que ela produzirá
 trabalhos excelentes.
 
 Também em 2021, fui convidado pelo Professor Ricardo I. F. Trindade a
-coorientar o aluno de doutorado \GelsonLink{} da Universidade de São Paulo.
+coorientar o aluno de doutorado \GelsonLink{} da \USP{}.
 Eu e o Ricardo havíamos conversado durante encontros no AGU Fall Meeting sobre
 algumas ideias de adaptar técnicas de métodos potenciais, como a deconvolução
 de Euler (seção~\ref{sec_euler}), a dados de microscopia magnética.
@@ -3582,7 +3653,7 @@ Não tenho dúvida de que nossa colaboração produzirá pesquisa de alto impact
 nessa linha emergente.
 
 Fui o orientador de 11 trabalhos de conclusão de curso e uma dissertação de
-mestrado do curso de geofísica da University of Liverpool, com alunos
+mestrado do curso de geofísica da \UoL{}, com alunos
 atuando em diversas linhas de pesquisa\footnote{Uma lista completa dos alunos
 e seus projetos está disponível no meu Currículo Lattes: \url{https://lattes.cnpq.br/\Lattes}}.
 Aprendi com essas orientações como guiar alunos sem experiência prévia em
@@ -3745,7 +3816,7 @@ atividades online causados pela pandemia de COVID.
       FGEL01-00805 Geologia Geral I.
   \end{courselist}
 \end{subsummarybox}
-\begin{subsummarybox}[frametitle=\faGraduationCap{}\quad Disciplinas ministradas na University of Liverpool]
+\begin{subsummarybox}[frametitle=\faGraduationCap{}\quad Disciplinas ministradas na \UoL{}]
   \begin{courselist}
     2023--atual  &
       ENVS219: Earth and Environmental Data Science (\textit{em
@@ -3836,7 +3907,7 @@ Inclusive, fui escolhido como paraninfo da turma de formandos da Geologia em
   \label{fig_notebooksismica}
 \end{figure}
 
-Na University of Liverpool, participei de diversas disciplinas dos cursos de
+Na \UoL{}, participei de diversas disciplinas dos cursos de
 Geofísica e Geologia, ministrando
 programação em Python para Ciências da Terra em ``ENVS101
 Study Skills and GIS'',
@@ -3925,7 +3996,7 @@ Por conta da pandemia de COVID de 2020, muitas das atividades de extensão que
 eram promovidas pela universidade estavam canceladas durante a maior parte da
 minha estadia em Liverpool.
 Em 2022, com a retomada das atividades presenciais, participei de três eventos
-na University of Liverpool chamados de \textit{Open Days}, durante os quais
+na \UoL{} chamados de \textit{Open Days}, durante os quais
 os alunos de ensino médio visitam a universidade para conhecer mais sobre os
 cursos oferecidos.
 Na parte das Ciências da Terra, fizemos demonstrações sobre como a viscosidade
@@ -3955,8 +4026,8 @@ magnetômetros dos celulares modernos.
 \label{cap_conclusao}
 
 Este memorial contém um relato dos últimos 19 anos, desde minha entrada no
-curso de Bacharelado em Geofísica da Universidade de São Paulo até minha
-posição atual como Lecturer na University of Liverpool.
+curso de Bacharelado em Geofísica da \USP{} até minha
+posição atual como Lecturer na \UoL{}.
 Ao longo desse caminho, passei por 6 instituições em 4 países, fui autor de 16
 artigos científicos e 10 softwares livres para ciência, ministrei 10
 disciplinas diferentes de graduação e orientei e coorientei 16 alunos de
@@ -4001,7 +4072,7 @@ experienciar como diferentes culturas abordam o ensino superior e o
 financiamento para pesquisa.
 Desde minha primeira experiência no exterior na York University
 (seção~\ref{sec_york}), aprecio cada vez mais o que temos no Brasil e, em
-particular, na Universidade de São Paulo.
+particular, na \USP{}.
 Obter os títulos de Bacharel, Mestre e Doutor sem acumular uma dívida
 gigantesca é um privilégio que poucos tem nos E.U.A., Canadá e Inglaterra.
 Devo muito ao país que me providenciou um ensino superior de qualidade
@@ -4044,7 +4115,7 @@ Gostaria também de propor o uso da observação por pares como uma técnica par
 difundir boas práticas pedagógicas, porque acredito ter coisas a
 contribuir assim como sei que tenho muito a aprender.
 Em suma, seria uma honra ter a chance de fazer minha parte para formar os
-alunos brasileiros e contribuir para a Universidade de São Paulo.
+alunos brasileiros e contribuir para a \USP{}.
 
 
 %==============================================================================
