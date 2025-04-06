@@ -178,6 +178,8 @@
 \usepackage{nameref}
 % Better handling of footnotes inside summary boxes
 \usepackage{footmisc}
+% To get the number of pages in the document
+\usepackage{lastpage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -229,6 +231,7 @@
 % Define custom colors
 \definecolor{lu_gray}{gray}{0.98}
 \definecolor{lu_darkgray}{gray}{0.3}
+\definecolor{lu_mediumgray}{gray}{0.5}
 \definecolor{lu_blue}{RGB}{32, 96, 194}
 \definecolor{lu_lightblue}{RGB}{238, 245, 250}
 \definecolor{lu_yellow}{RGB}{255, 193, 7}
@@ -351,10 +354,22 @@
 \interfootnotelinepenalty=10000
 
 % Configure headers and footers
+\newcommand{\Separator}{\hspace{3pt}|\hspace{3pt}}
+\newcommand{\HeaderFont}{\footnotesize\color{lu_darkgray}}
 \fancyhf{}
-\lhead{\fontsize{9pt}{0}\selectfont \nouppercase\leftmark | \Title{}}
+\lhead{%
+    \HeaderFont{}
+    \nouppercase\leftmark{}
+    \Separator{}
+    \Title{}
+}
 \chead{}
-\rhead{\fontsize{9pt}{0}\selectfont \Author{} | \thepage}
+\rhead{%
+    \HeaderFont{}
+    \Author{}
+    \Separator{}
+    \thepage\space de\space \pageref*{LastPage}
+}
 \cfoot{}
 \renewcommand{\headrulewidth}{0.3pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -547,7 +562,7 @@ pesquisa.
 \end{figure}
 \begin{summarybox}[frametitle=\faInfoCircle{}\quad Informações para contato]
   \begin{fa-ul}
-    \faEnvelope & email profissional: \href{mailto:\Email}{\Email} \\
+    \faEnvelope & Email: \href{mailto:\Email}{\Email} \\
     \aiOrcid & ORCID: \href{https://orcid.org/\ORCID}{\ORCID} \\
     \aiLattes & Currículo Lattes: \url{https://lattes.cnpq.br/\Lattes} \\
     \aiPublonsSquare & ResearcherID: \href{https://www.webofscience.com/wos/author/rid/\ResearcherID}{\ResearcherID} \\
@@ -635,7 +650,7 @@ de São Paulo (seção~\ref{sec_usp}).
 Eu era capaz de ler livros e artigos em inglês em menos tempo que meus colegas,
 me comunicava com pesquisadores estrangeiros naturalmente durante meu trabalho
 de conclusão de curso e creio que minha fluência na língua foi um fator
-importante para conseguir o intercâmbio com a York University, Canadá,
+importante para conseguir o intercâmbio com a York University, Canadá
 (seção~\ref{sec_york}).
 
 A sorte é outro fator que foi muito importante em diversas etapas da minha
@@ -651,8 +666,7 @@ extremamente oportuno.
 A turma da Geofísica de 2004 é simplesmente excepcional.
 O apoio da turma foi muito importante, tanto para superar momentos desafiadores
 quanto para elevar cada um de nós a alcançar além do que achávamos possível.
-Além disso, pude usufruir desse suporte ainda na pós-graduação no Observatório
-Nacional (seção~\ref{sec_on}), tanto por conta de vários membros da turma
+Além disso, pude usufruir desse suporte ainda na pós-graduação no \ON{} (seção~\ref{sec_on}), tanto por conta de vários membros da turma
 estarem trabalhando no Rio de Janeiro, quanto por ter meu amigo
 \href{https://www.pinga-lab.org/people/oliveira-jr.html}{Vanderlei C. Oliveira Jr.}
 comigo na pós-graduação (Vanderlei é atualmente Pesquisador Titular do
@@ -3493,7 +3507,7 @@ Esperamos elaborar a primeira publicação da tese da India em meados de 2023.
 
 
 %==============================================================================
-\chapter{Atividades de Ensino, Mentoria e Extensão}
+\chapter{Ensino, Orientações e Extensão}
 \label{cap_ensino}
 
 \begin{figure}[h]
