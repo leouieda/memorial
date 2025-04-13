@@ -111,6 +111,8 @@
 \newcommand{\Ricardo}{Trindade, RIF}
 \newcommand{\Yago}{Castro, YM}
 \newcommand{\Arthur}{Macêdo, AS}
+\newcommand{\India}{Uppal, I}
+\newcommand{\Gelson}{Souza-Junior, GF}
 
 % Links to webpages I use often
 \newcommand{\SantiagoLink}{\href{https://www.santisoler.com/}{Santiago R. Soler}}
@@ -125,6 +127,7 @@
 \newcommand{\GabrielLink}{\href{https://www.compgeolab.org/team/\#chagas-gabriel}{Gabriel Aparecido das Chagas Silva}}
 \newcommand{\ArthurLink}{\href{https://www.compgeolab.org/team/\#arthursmacedo}{Arthur Siqueira Macêdo}}
 \newcommand{\ErosLink}{\href{https://www.compgeolab.org/team/\#ErosKerouak}{Eros Kerouak Cordeiro Pereira}}
+\newcommand{\SpirosLink}{\href{https://www.yorku.ca/spiros/spiros.html}{Spiros Pagiatakis}}
 \newcommand{\GMTLink}{\href{https://www.generic-mapping-tools.org}{Generic Mapping Tools}}
 \newcommand{\CompGeoLabLink}{\href{https://www.compgeolab.org/}{Computer-Oriented Geoscience Lab}}
 \newcommand{\SwungLink}{\href{https://softwareunderground.org/}{Software Underground}}
@@ -921,8 +924,7 @@ mesmas disciplinas, como era o caso na USP.
 Durante minha estadia na York, aprendi sobre sistemas geográficos de
 coordenadas, posicionamento, ajustes de redes geodésicas, geodésia física e
 levantamentos gravimétricos de alta precisão.
-Um destaque dessa experiência foram as aulas do Professor
-\href{https://www.yorku.ca/spiros/spiros.html}{Spiros Pagiatakis}.
+Um destaque dessa experiência foram as aulas do Professor \SpirosLink{}.
 Suas aulas de geodésia e matemática forneceram a clareza que me faltava nos
 conceitos de anomalias da gravidade e a solução prática de problemas inversos
 em geofísica.
@@ -2845,7 +2847,9 @@ disciplinas da USP, \UoL{} e da UERJ.
     \faSearchDollar & Projetos financiados pelas agências: National Science
       Foundation (E.U.A.), Royal Society (Reino Unido) e Software Sustainability
       Institute (Reino Unido)\\
-    \faFilePdf & 18 artigos publicados em revistas e 11 trabalhos completos em anais de eventos\footnotemark[1] \\
+    \faFilePdf & 18 artigos publicados em revistas, 1 artigo aceito para
+    publicação, 1 artigo em revisão como preprint, 11 trabalhos completos em
+    anais de eventos\footnotemark[1] \\
     \faComment & 41 apresentações de trabalho, sendo 17 dessas convidadas\footnotemark[1] \\
     \aiGoogleScholarSquare & 3760 citações no
     \href{https://scholar.google.com/citations?user=qfmPrUEAAAAJ}{Google Scholar}
@@ -3427,14 +3431,22 @@ espaçamento de malhas regulares.
 
 \begin{summarybox}[frametitle=\faInfoCircle{}\quad Resumo da linha de pesquisa]
   \begin{fa-ul}
-    \faFilePdf & 2 artigos publicados \\
+    \faFilePdf & 3 artigos publicados \\
     \faFile & 1 trabalho completo em anais de eventos \\
-    \faUserGraduate & Alunos envolvidos: Gelson Ferreira de Souza Junior (PhD), Lottie Cooper (BSc) \\
-    \faGlobeAmericas & País dos colaboradores: Brasil
+    \faUserGraduate & Alunos envolvidos: India Uppal (PhD), Gelson Ferreira de Souza Junior (PhD), Lottie Cooper (BSc) \\
+    \faGlobeAmericas & País dos colaboradores: Brasil, Reino Unido
   \end{fa-ul}
 \end{summarybox}
 \begin{subsummarybox}[frametitle=\faFilePdf{}\quad Artigos publicados]
   \begin{paperlist}
+    2025 &
+      \Me, \Gelson, \India, \Bi.
+      Euler inversion: Locating sources of potential-field data through
+      inversion of Euler's homogeneity equation,
+      \emph{Geophysical Journal International},
+      \DOI{10.1093/gji/ggaf114}.
+      \GitHub{compgeolab/euler-inversion}.
+      \\
     2014 &
       \Me, \Bi, \Val.
       Geophysical tutorial: Euler deconvolution of potential-field data,
@@ -3487,12 +3499,40 @@ Nosso objetivo era utilizar o método de \citet{Barbosa1999} para obter uma
 anomalias.
 O método que desenvolvemos foi publicado em \citet{Melo2013}.
 
-Atualmente, estou investigando o uso da deconvolução de Euler para a
-interpretação de dados de microscopia magnética (seção~\ref{sec_micromag})
-através do projeto do aluno de doutorado \GelsonLink{}
-(seção~\ref{sec_orientacao}).
-Essa técnica nos permite estimar a profundidade de minerais magnéticos
-individuais em nossas amostras.
+Durante as aulas do Professor \SpirosLink{} na York University
+(seção~\ref{sec_york}), aprendi sobre modelos matemáticos implícitos que são
+utilizados na geodésia.
+Esses modelos são utilizados quando não é possível separar os dados dos
+parâmetros de um problema inverso.
+Anos depois, nas aulas de métodos potenciais da minha orientadora
+Professora \ValeriaLink{} no \ON{}, conectei a teoria que havia aprendido na
+York com a deconvolução de Euler.
+Isso me levou a desenvolver a ideia de utilizar a formulação matemática da
+geodésia para inverter a equação da homogeneidade de Euler.
+Esse projeto, embora promissor, foi pausado por conta de outros compromissos
+que tive na época, principalmente meu novo cargo de Professor Assistente na
+UERJ (seção~\ref{sec_uerj}).
+Em 2024, retornei a esse trabalho junto ao \GelsonLink{}, \IndiaLink{},
+e \VanderleiLink{}.
+O método que desenvolvemos, chamado \textit{inversão de Euler}
+\citep{Uieda2025}, se mostrou superior à deconvolução de Euler em quase todos
+os aspectos: é mais robusto a ruídos e a fontes interferentes, é capaz de
+estimar o índice estrutural das fontes de maneira robusta, além de ser tão
+computacionalmente eficiente quanto o método original.
+
+Através do projeto do aluno de doutorado \GelsonLink{}
+(seção~\ref{sec_orientacao}), investigamos o uso da deconvolução de Euler para
+a interpretação de dados de microscopia magnética (seção~\ref{sec_micromag}).
+Na microscopia, buscamos estimar os momentos de dipolo de pequenos minrais com
+estruturas de monodomínio ou pseudo-monodomínio.
+Em ambos os casos, os sinais produzidos pelas fontes é aproximadamente dipolar
+na escala que enxergam os microscópios atuais.
+Como existe ambiguidade no problema inverso de estimar a amplitude do momento
+e a profundidade do grão, necessitamos de informações \textit{a priori} sobre
+a localização dos dipolos.
+Em \citet{SouzaJunior2024} e \citet{SouzaJunior2025} utilizamos a deconvolução
+de Euler como informação \textit{a priori} para a inversão do momento de dipolo
+com grande sucesso.
 
 \begin{fancyenum}{\faBullseye}{Objetivos}
   \item Popularizar o entendimento da técnica e as boas práticas em sua
@@ -3509,7 +3549,8 @@ individuais em nossas amostras.
 \begin{fancyenum}{\faRocket}{Impacto da pesquisa}
   \item Os avanços obtidos na deconvolução de Euler foram utilizados
     como informação a priori em \citet{OliveiraJr2015} e na linha de pesquisa
-    em microscopia magnética (seção~\ref{sec_micromag}).
+    em microscopia magnética (seção~\ref{sec_micromag}) nos trabalhos de
+    \citet{SouzaJunior2024} e \citet{SouzaJunior2025}.
 \end{fancyenum}
 
 
@@ -3607,8 +3648,8 @@ os dados de GPS (com 3 componentes mas pouca cobertura espacial) e de InSAR
 (com 1 componente mas alta cobertura espacial).
 Realizei duas apresentações em congressos sobre esse trabalho mas não fui capaz
 de obter resultados satisfatórios.
-Minha vinda para Liverpool interrompeu essa linha mas espero continuá-la no
-futuro.
+Minha ida para Liverpool (seção~\ref{sec_liverpool}) interrompeu essa linha mas
+espero continuá-la no futuro.
 
 \begin{fancyenum}{\faBullseye}{Objetivos}
   \item Criar ferramentas de software livre capazes de interpolar dados
@@ -3629,9 +3670,10 @@ futuro.
 \end{fancyenum}
 \begin{fancyenum}{\faRocket}{Impacto da pesquisa}
   \item O software Verde é utilizado regularmente pela comunidade científica
-    e recebeu 21 citações ao trabalho \citet{Uieda2018}\footnote{Segundo a plataforma Google Scholar \url{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qfmPrUEAAAAJ&citation_for_view=qfmPrUEAAAAJ:ye4kPcJQO24C} (acessada em 13/01/2023)}
-    e mais de 1000 downloads mensais\footnote{Segundo a página
-    \url{https://pepy.tech/project/Verde} (acessada em 13/01/2023)}.
+    e recebeu 49 citações ao trabalho \citet{Uieda2018}\footnote{Segundo
+    a plataforma Google Scholar \url{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qfmPrUEAAAAJ&citation_for_view=qfmPrUEAAAAJ:ye4kPcJQO24C} (acessada em 13/04/2025)}
+    e mais de 4000 downloads mensais\footnote{Segundo a página
+    \url{https://pepy.tech/project/Verde} (acessada em 13/04/2025)}.
 \end{fancyenum}
 
 
@@ -3640,7 +3682,8 @@ futuro.
 
 \begin{summarybox}[frametitle=\faInfoCircle{}\quad Resumo da linha de pesquisa]
   \begin{fa-ul}
-    \faFilePdf & 1 artigo publicado \\
+    \faFilePdf & 2 artigo publicado, 1 artigo aceito para publicação, 1 artigo
+    em revisão na forma de preprint\\
     \faUserGraduate & Alunos envolvidos: Gelson Ferreira de Souza Junior (PhD) \\
     \faGlobeAmericas & País dos colaboradores: Brasil \\
     \faSearchDollar & Financiamento: \href{https://royalsociety.org/}{Royal Society} (IES\textbackslash{}R3\textbackslash{}213141)
