@@ -113,6 +113,12 @@
 \newcommand{\Arthur}{Macêdo, AS}
 \newcommand{\India}{Uppal, I}
 \newcommand{\Gelson}{Souza-Junior, GF}
+\newcommand{\Roger}{Fu, RR}
+\newcommand{\Janine}{Carmo, J}
+\newcommand{\Ualisson}{Bellon, UD}
+\newcommand{\Wyn}{Williams, W}
+\newcommand{\Muxworthy}{Muxworthy, AR}
+\newcommand{\Les}{Nagy, L}
 
 % Links to webpages I use often
 \newcommand{\SantiagoLink}{\href{https://www.santisoler.com/}{Santiago R. Soler}}
@@ -3684,13 +3690,37 @@ espero continuá-la no futuro.
   \begin{fa-ul}
     \faFilePdf & 2 artigo publicado, 1 artigo aceito para publicação, 1 artigo
     em revisão na forma de preprint\\
-    \faUserGraduate & Alunos envolvidos: Gelson Ferreira de Souza Junior (PhD) \\
+    \faUserGraduate & Alunos envolvidos: Gelson Ferreira de Souza Junior (PhD),
+    Yago Moreira Castro (MSc)\\
     \faGlobeAmericas & País dos colaboradores: Brasil \\
     \faSearchDollar & Financiamento: \href{https://royalsociety.org/}{Royal Society} (IES\textbackslash{}R3\textbackslash{}213141)
   \end{fa-ul}
 \end{summarybox}
 \begin{subsummarybox}[frametitle=\faFilePdf{}\quad Artigos publicados]
   \begin{paperlist}
+    2025 &
+      \Gelson, \Me, \Ricardo, \Roger, \Ualisson, \Yago.
+      Robust directional analysis of magnetic microscopy images using
+      non-linear inversion and iterative Euler deconvolution,
+      \emph{EarthArXiv} (preprint em revisão na \textit{JGR: Solid Earth}),
+      \DOI{10.31223/X5N42F}.
+      \GitHub{compgeolab/micromag-interfering-sources}.
+      \\
+    2025 &
+      \Ualisson, \Wyn, \Muxworthy, \Gelson, \Les, \Me, \Ricardo.
+      Efficiency of thermoremanent magnetization acquisition in vortex-state
+      particle assemblies,
+      \emph{Geophysical Research Letters} (aceito para publicação),
+      \DOI{10.22541/essoar.173870862.24424739/v1}.
+      \Data{10.5281/zenodo.14051069}.
+      \\
+    2024 &
+      \Gelson, \Me, \Ricardo, \Janine, \Roger.
+      Full vector inversion of magnetic microscopy images using Euler deconvolution as prior information,
+      \emph{Geochemistry, Geophysics, Geosystems},
+      \DOI{10.1029/2023GC011082}.
+      \GitHub{compgeolab/micromag-euler-dipole}.
+      \\
     2015 &
       \Bi, \Dai, \Val, \Me.
       Estimation of the total magnetization direction of approximately spherical
@@ -3713,11 +3743,14 @@ magnética permitirá a melhor separação das magnetizações e poderá levar a
 estimativas de paleo-pólos geomagnéticos e de paleointensidades mais
 confiáveis.
 
-Meu trabalho nessa linha de pesquisa iniciou com a coorientação do aluno
-\GelsonLink{} (seção~\ref{sec_orientacao}).
+Meu trabalho nessa linha de pesquisa iniciou com a orientação do aluno
+\GelsonLink{} (seção~\ref{sec_orientacao}) em 2021.
 Seu projeto visa adaptar técnicas da geofísica aplicada para a microscopia
 magnética, como a deconvolução de Euler, o método de \citet{OliveiraJr2015} e o
 processamento de dados aeromagnéticos.
+Nosso principal objetivo é realizer estudos de paleomagnetismo
+e paleointensidade utilizando dados de microscopia magnética, um feito que
+ainda não foi alcançado por outros grupos de pesquisa.
 O Gelson já foi capaz de utilizar técnicas de processamento de imagens (que
 aprendi com a minha disciplina de sensoriamento remoto;
 seção~\ref{sec_ensino_grad}) e filtros, como a amplitude do gradiente total,
@@ -3727,8 +3760,19 @@ Com os campos separados, é possível determinar a posição 3D do mineral
 utilizando uma única janela na deconvolução de Euler.
 A posição é então utilizada como informação a priori em uma adaptação do método
 de \citet{OliveiraJr2015} para estimar o momento de dipolo do mineral.
-Seu trabalho ainda está em estágio inicial mas já obtivemos resultados
-promissores que estão sendo consolidados em um artigo.
+Publicamos seus resultados e o primeiro método semi-automático para a inversão
+de centenas de fontes magnéticas em \citet{SouzaJunior2024}.
+Percebemos em seguida que o método falhava em situações nas quais fontes de
+sinal forte estavam sobrepostas a fontes de sinal fraco.
+Isso impossibilitava a aplicação do método a rochas com altas concentrações de
+minerais magnéticos, como rochas vulcânicas.
+Aprimoramos o método introduzindo uma inversão não-linear para refinar
+a solução e um processo de remoção do sinal progressivo do sinal das fontes
+durante a inversão.
+O resultado é um método mais robusto que é capaz de estimar corretamente
+a magnetização em altas concentrações de minerais magnéticos.
+Esses resultados foram publicados como um preprint \citep{SouzaJunior2025}
+e está em revisão na revista \textit{JGR: Solid Earth}.
 
 Em 2022, fui contemplado com um projeto financiado pela
 \href{https://royalsociety.org/}{Royal Society} para dar início à essa
@@ -3736,13 +3780,20 @@ colaboração com o Gelson e seu orientador Ricardo I. F. Trindade.
 O projeto combina minha experiência em processamento e inversão de dados
 aeromagnéticos com o amplo conhecimento do Gelson e do Ricardo em
 paleomagnetismo.
-Através desse projeto, o Gelson passou o mês de Novembro de 2022 em Liverpool
-trabalhando comigo nos resultados para seu primeiro artigo.
-Temos ainda mais duas ou três viagens programadas como parte desse projeto para
-o próximo ano.
+Através desse projeto, eu, o Gelson e o Ricardo pudemos realizar viagens entre
+Liverpool e São Paulo para trabalharmos nos resultados dos dois artigos citados
+acima.
 Este projeto me possibilitou retornar ao paleomagnetismo 17 anos após terminar
 minha primeira iniciação científica no assunto (seção~\ref{sec_ic_paleomag})
 com o mesmo grupo de pesquisa da USP.
+
+Em 2024, o aluno de mestrado \YagoLink{} se juntou ao grupo sob minha
+orientação.
+Seu projeto é desenvolver um software livre em Python que torne o trabalho
+que temos feito na área de microscopia magnética  acessível para a comunidade
+do paleomagnetismo.
+chamado
+\href{https://www.fatiando.org/magali}{Magali}
 
 \begin{fancyenum}{\faBullseye}{Objetivos}
   \item Adaptar técnicas de geofísica aplicada para processar e interpretar
