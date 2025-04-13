@@ -118,7 +118,8 @@
 \newcommand{\PaulLink}{\href{https://www.soest.hawaii.edu/pwessel/}{Paul Wessel}}
 \newcommand{\IndiaLink}{\href{https://www.compgeolab.org/team/\#indiauppal}{India Uppal}}
 \newcommand{\GelsonLink}{\href{https://www.compgeolab.org/team/\#Souza-junior}{Gelson Ferreira de Souza Junior}}
-
+\newcommand{\YagoLink}{\href{https://www.compgeolab.org/team/\#YagoMCastro}{Yago
+Moreira Castro}}
 \newcommand{\GMTLink}{\href{https://www.generic-mapping-tools.org}{Generic Mapping Tools}}
 \newcommand{\CompGeoLabLink}{\href{https://www.compgeolab.org/}{Computer-Oriented Geoscience Lab}}
 \newcommand{\SwungLink}{\href{https://softwareunderground.org/}{Software Underground}}
@@ -2096,7 +2097,7 @@ As publicações que são acompanhadas pelas ferramentas computacionais
 \citep[e.g.,][]{Uieda2016,Uieda2017} costumam ser mais citadas que minhas
 outras publicações\footnote{Segundo dados da plataforma Google Scholar
 \url{https://scholar.google.com/citations?user=qfmPrUEAAAAJ} (acessado em
-10/01/2023)}.
+13/04/2025)}.
 
 Apresento a seguir um resumo da minha produção relacionada a software livre.
 
@@ -2119,7 +2120,7 @@ Apresento a seguir um resumo da minha produção relacionada a software livre.
     \\
     \faGavel & Licença: \href{https://github.com/leouieda/tesseroids/blob/master/LICENSE.txt}{BSD 3-clause}
     \\
-    \aiGoogleScholarSquare & 146 citações no \href{https://scholar.google.com/citations?view\_op=view\_citation\&hl=en\&user=qfmPrUEAAAAJ\&citation\_for\_view=qfmPrUEAAAAJ:AXPGKjj\_ei8C}{Google Scholar}\footnotemark{} (acessado em 27/12/2022)
+    \aiGoogleScholarSquare & 221 citações no \href{https://scholar.google.com/citations?view\_op=view\_citation\&hl=en\&user=qfmPrUEAAAAJ\&citation\_for\_view=qfmPrUEAAAAJ:AXPGKjj\_ei8C}{Google Scholar}\footnotemark{} (acessado em 13/04/2025)
   \end{fa-ul}
 \end{summarybox}
 \footnotetext{Citações ao trabalho \citet{Uieda2016}.}
@@ -2179,7 +2180,7 @@ Essa última versão do Tesseroids foi descrita no artigo \citet{Uieda2016}, que
 é um dos meus trabalhos mais citados\footnote{Segundo a plataforma Google
 Scholar
 \url{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qfmPrUEAAAAJ&citation_for_view=qfmPrUEAAAAJ:AXPGKjj_ei8C}
-(acessado em 27/12/2022)}.
+(acessado em 13/04/2025)}.
 O desenvolvimento do Tesseroids foi interrompido em 2017 para que eu pudesse me
 dedicar mais ao Fatiando a Terra e ao meu novo trabalho na \UHM{}
 (seção~\ref{sec_hawaii}).
@@ -2213,7 +2214,7 @@ do Fatiando a Terra), é mais rápida que a versão em C.
     \\
     \faGavel & Licença: \href{https://opensource.org/licenses/BSD-3-Clause}{BSD 3-clause}
     \\
-    \aiGoogleScholarSquare & 119 citações no \href{https://scholar.google.com/citations?user=qfmPrUEAAAAJ}{Google Scholar}\footnotemark{} (acessado em 27/12/2022)
+    \aiGoogleScholarSquare & 172 citações no \href{https://scholar.google.com/citations?user=qfmPrUEAAAAJ}{Google Scholar}\footnotemark{} (acessado em 13/03/2025)
   \end{fa-ul}
 \end{summarybox}
 \footnotetext{Total de citações aos trabalhos \citet{Uieda2013}, \citet{Uieda2018} e \citet{Uieda2020}.}
@@ -2351,48 +2352,63 @@ mais eficiente e fácil de usar.
 
 As novas bibliotecas que são parte do projeto Fatiando a Terra são:
 
-\begin{itemize}
-  \item \href{https://www.fatiando.org/verde}{\textbf{Verde}}:
-    A primeira biblioteca que foi desenvolvida para a nova fase do Fatiando. O
-    Verde contém funções e classes para processar e interpolar dados
-    distribuídos irregularmente.
-  \item \href{https://www.fatiando.org/harmonica}{\textbf{Harmonica}}:
-    Nossa biblioteca para processamento e modelagem de dados de métodos
-    potenciais. O Harmonica é liderado pelo Santiago e inclui funções para
-    modelagem direta, correção topográfica, processamento com fontes
-    equivalentes (seção~\ref{sec_eql}) e filtros no domínio da frequência.
-  \item \href{https://www.fatiando.org/boule}{\textbf{Boule}}:
-    Biblioteca para o cálculo do campo de gravidade gerado por elipsóides de
-    referência (i.e., a gravidade normal). As funções e classes do Boule eram
-    originalmente parte do Harmonica. O Boule foi criado em colaboração com os
-    desenvolvedores do \href{https://github.com/SHTOOLS/SHTOOLS}{SHTools}
-    \citep{Wieczorek2018} para que pudéssemos utilizar suas funções
-    independentemente do Harmonica. O cálculo da gravidade normal em qualquer
-    ponto fora do elipsóide é feito através da solução analítica de
-    \citet{Lakshmanan1991} e \citet{Li2001}. Logo, a correção de ar-livre não é
-    necessária para o cálculo de distúrbios da gravidade.
-  \item \href{https://www.fatiando.org/pooch}{\textbf{Pooch}}:
-    Uma biblioteca para baixar dados da internet e armazená-lo localmente. O
-    Pooch não é diretamente relacionado à geofísica e foi criado em colaboração
-    com os desenvolvedores do \href{https://github.com/Unidata/MetPy}{MetPy}
-    \citep{May2016}. Durante o congresso Scipy de 2018, notamos que diversas
-    bibliotecas em Python, incluindo o Verde e o MetPy, possuíam códigos
-    semelhantes para baixar dados.
-    Por isso, criamos o Pooch para que todos pudéssemos utilizá-lo e eliminar
-    o código repetido.
-  \item \href{https://www.fatiando.org/ensaio}{\textbf{Ensaio}}:
-    Biblioteca que utiliza o Pooch para baixar os dados abertos que utilizamos
-    nos tutoriais e nas documentações dos outros softwares.
-  \item \href{https://www.fatiando.org/choclo}{\textbf{Choclo}}:
-    A mais recente adição ao Fatiando. O Choclo é desenvolvido e liderado pelo
-    Santiago. Essa biblioteca implementa rotinas altamente otimizadas para
-    modelagem direta em métodos potenciais. Assim como o Boule, o código
-    presente no Choclo era inicialmente parte do Harmonica mas está sendo
-    separado para que possa ser usado tanto no Harmonica como no SimPEG. Esse
-    trabalho é parte do pós-doutorado que o Santiago está fazendo com a
-    Professora \href{https://lindseyjh.ca/}{Lindsey Heagy} (uma das criadoras
-    do SimPEG) na University of British Columbia, Canadá.
-\end{itemize}
+\vspace{0.3cm}
+\begin{description}[labelindent=0cm,leftmargin=0.5cm]
+    \item[\href{https://www.fatiando.org/verde}{Verde} ---]
+        A primeira biblioteca que foi desenvolvida para a nova fase do
+        Fatiando. O Verde contém funções e classes para processar e interpolar
+        dados distribuídos irregularmente.
+    \item[\href{https://www.fatiando.org/harmonica}{Harmonica} ---]
+        Nossa biblioteca para processamento e modelagem de dados de métodos
+        potenciais. O Harmonica é liderado pelo Santiago e inclui funções para
+        modelagem direta, correção topográfica, processamento com fontes
+        equivalentes (seção~\ref{sec_eql}) e filtros no domínio da frequência.
+    \item[\href{https://www.fatiando.org/boule}{Boule} ---]
+        Biblioteca para o cálculo do campo de gravidade gerado por elipsóides
+        de referência (i.e., a gravidade normal). As funções e classes do Boule
+        eram originalmente parte do Harmonica. O Boule foi criado em
+        colaboração com os desenvolvedores do
+        \href{https://github.com/SHTOOLS/SHTOOLS}{SHTools}
+        \citep{Wieczorek2018} para que pudéssemos utilizar suas funções
+        independentemente do Harmonica. O cálculo da gravidade normal em
+        qualquer ponto fora do elipsóide é feito através da solução analítica
+        de \citet{Lakshmanan1991} e \citet{Li2001}. Logo, a correção de
+        ar-livre não é necessária para o cálculo de distúrbios da gravidade.
+    \item[\href{https://www.fatiando.org/pooch}{Pooch} ---]
+        Uma biblioteca para baixar dados da internet e armazená-lo localmente.
+        O Pooch não é diretamente relacionado à geofísica e foi criado em
+        colaboração com os desenvolvedores do
+        \href{https://github.com/Unidata/MetPy}{MetPy} \citep{May2016}. Durante
+        o congresso Scipy de 2018, notamos que diversas bibliotecas em Python,
+        incluindo o Verde e o MetPy, possuíam códigos semelhantes para baixar
+        dados. Por isso, criamos o Pooch para que todos pudéssemos utilizá-lo
+        e eliminar o código repetido.
+    \item[\href{https://www.fatiando.org/ensaio}{Ensaio} ---]
+        Biblioteca que utiliza o Pooch para baixar os dados abertos que
+        utilizamos nos tutoriais e nas documentações dos outros softwares.
+    \item[\href{https://www.fatiando.org/choclo}{Choclo} ---]
+        A mais recente adição ao Fatiando. O Choclo é desenvolvido e liderado
+        pelo Santiago. Essa biblioteca implementa rotinas altamente otimizadas
+        para modelagem direta em métodos potenciais. Assim como o Boule,
+        o código presente no Choclo era inicialmente parte do Harmonica mas
+        está sendo separado para que possa ser usado tanto no Harmonica como no
+        SimPEG. Esse trabalho é parte do pós-doutorado que o Santiago está
+        fazendo com a Professora \href{https://lindseyjh.ca/}{Lindsey Heagy}
+        (uma das criadoras do SimPEG) na University of British Columbia,
+        Canadá.
+    \item[\href{https://www.fatiando.org/bordado}{Bordado} ---]
+        Biblioteca para a geração de coordenadas para malhas regulares
+        e perfis. Essas funções faziam parte da biblioteca Verde e foram
+        movidas para o Bordado com o objetivo de torná-las mais facilmente
+        acessadas por outros projetos. As funções foram todas melhoradas
+        e generalizadas para N dimensões.
+  \item[\href{https://www.fatiando.org/magali}{Magali} ---]
+      Essa é nossa biblioteca para análise e inversão de dados de microscopia
+      magnética (seção~\ref{sec_micromag}). Seu desenvolvimento está sendo
+      liderado pelo aluno de mestrado \YagoLink{} como parte de sua
+      dissertação, com contribuições do aluno de doutorado \GelsonLink{}.
+\end{description}
+\vspace{0.3cm}
 
 Nossa reestruturação foi acompanhada de um esforço para aumentar o engajamento
 e a diversidade de voluntários no projeto.
@@ -2404,22 +2420,22 @@ participação regular de outras cinco pessoas.
 
 O escopo bem definido de cada uma das bibliotecas (ao invés de ``modelar
 toda a Terra'') também contribui para sua adoção pela comunidade científica.
-Um exemplo claro de sucesso é o Pooch, que atualmente é utilizado por 88 outros
-softwares\footnote{Segundo a página
-\url{https://libraries.io/pypi/pooch/dependents} (acessada em 11/01/2023)}.
-Como consequência, o Pooch agregou mais de 14 milhões de downloads\footnote{Segundo a página
-\url{https://pepy.tech/project/Pooch} (acessada em 11/01/2023)} e 31 pessoas
+Um exemplo claro de sucesso é o Pooch, que atualmente é utilizado por mais de
+500 outros softwares\footnote{Segundo análise do GitHub
+\url{https://github.com/fatiando/pooch/network/dependents?dependent_type=PACKAGE} (acessada em 13/04/2025)}.
+Como consequência, o Pooch agregou mais de 84 milhões de downloads\footnote{Segundo a página
+\url{https://pepy.tech/project/Pooch} (acessada em 13/04/2025)} e 44 pessoas
 participaram do seu desenvolvimento\footnote{Segundo a página
 \url{https://github.com/fatiando/pooch/graphs/contributors} (acessada em
-11/01/2023)}.
+13/04/2025)}.
 Sabemos que as outras bibliotecas também estão sendo utilizadas pela comunidade
 pelas mais de 50 mil visualizações anuais das nossas páginas de documentação,
 com visitantes originados de todos os continentes (exceto a Antártica)\footnote{Segundo a página
-\url{https://plausible.io/fatiando.org} (acessada em 11/01/2023)}.
+\url{https://plausible.io/fatiando.org} (acessada em 13/04/2025)}.
 
 
 
-\subsection{Generic Mapping Tools}
+\subsection{The Generic Mapping Tools}
 \label{sec_gmt}
 
 \begin{figure}[h]
