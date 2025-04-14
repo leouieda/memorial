@@ -3692,7 +3692,7 @@ espero continuá-la no futuro.
     em revisão na forma de preprint\\
     \faUserGraduate & Alunos envolvidos: Gelson Ferreira de Souza Junior (PhD),
     Yago Moreira Castro (MSc)\\
-    \faGlobeAmericas & País dos colaboradores: Brasil \\
+    \faGlobeAmericas & País dos colaboradores: Brasil, E.U.A., Reino Unido \\
     \faSearchDollar & Financiamento: \href{https://royalsociety.org/}{Royal Society} (IES\textbackslash{}R3\textbackslash{}213141)
   \end{fa-ul}
 \end{summarybox}
@@ -3790,30 +3790,53 @@ com o mesmo grupo de pesquisa da USP.
 Em 2024, o aluno de mestrado \YagoLink{} se juntou ao grupo sob minha
 orientação.
 Seu projeto é desenvolver um software livre em Python que torne o trabalho
-que temos feito na área de microscopia magnética  acessível para a comunidade
+que temos feito na área de microscopia magnética acessível para a comunidade
 do paleomagnetismo.
-chamado
-\href{https://www.fatiando.org/magali}{Magali}
+O software, chamado \href{https://www.fatiando.org/magali}{Magali}, é a mais
+nova biblioteca adicionada ao projeto \FatiandoLink{}.
+Esperamos ter uma primeira versão disponível em meados de 2025.
+
+Uma questão importante que necessitava de resposta é: quantos grãos são
+necessários para obtermos uma estimativa estatisticamente significante do campo
+indutor?
+A resposta dessa questão nos ajudaria a planejar a viabilidade de utilizar os
+microscópios atuais para estudos paleomagnéticos.
+Em \citet{Bellon2025}, utilizamos simulações micromagnéticas para responder
+essa pergunta. Atualmente, o Gelson está trabalhando em uma confirmação
+experimental desses resultados.
 
 \begin{fancyenum}{\faBullseye}{Objetivos}
   \item Adaptar técnicas de geofísica aplicada para processar e interpretar
     dados de microscopia magnética.
-  \item Obter estimativas do momento de dipolo de minerais magnéticos
-    individuais.
+  \item Obter estimativas da direção e intensidade da magnetização de amostras
+      com base em dados de microscopia.
   \item Produzir uma ferramenta de software livre que implementa os métodos
     desenvolvidos para ajudar a difundi-los na comunidade científica.
+\end{fancyenum}
+\begin{fancyenum}{\faLightbulb}{Principais contribuições}
+  \item Criação de uma técnica de inversão semi-automática capaz de estimar
+      o momento de dipolo de centenas de minerais magnéticos em poucos minutos.
+  \item Determinação do número de minerais pseudo-monodomínio necessários para
+      obter uma direção de magnetização estável.
+\end{fancyenum}
+\begin{fancyenum}{\faRocket}{Impacto da pesquisa}
+  \item O método desenvolvido está sendo utilizado pelos demais grupos
+      tralhando em microscopia magnética para complementar ou substituir
+      seus fluxos de processamento.
+  \item O CompGeoLab é um dos poucos (cerca de 2 ou 3) grupos mundiais que
+      estão à frente da pesquisa em inversão de microscopia magnética.
 \end{fancyenum}
 
 
 
-\section{Determinação do fluxo geotermal Antártico através de dados magnetométricos}
+\section{Compilação de dados magnéticos Antárticos}
 \label{sec_antartica}
 
 \begin{summarybox}[frametitle=\faInfoCircle{}\quad Resumo da linha de pesquisa]
   \begin{fa-ul}
-    \faUserGraduate & Alunos envolvidos: India Uppal (PhD) \\
-    \faGlobeAmericas & País dos colaboradores: Brasil, Reino Unido \\
-    \faSearchDollar & Financiamento: \UoL{} (bolsa de doutorado)
+    \faUserGraduate & Alunos envolvidos: India Uppal (PhD), Arthur Siqueira
+    Macêdo (MSc) \\
+    \faGlobeAmericas & País dos colaboradores: Brasil, Reino Unido
   \end{fa-ul}
 \end{summarybox}
 
@@ -3852,24 +3875,38 @@ British Antarctic Survey (\href{https://www.bas.ac.uk/profile/maxwe32/}{Maximili
 e \href{https://www.bas.ac.uk/profile/tomj/}{Tom Jordan})
 e com o subcomitê \href{https://www.scar-instant.org/index.php/research-themes/theme-2-solid-earth-ice-interactions/sc1-antarctic-geothermal-heat-flux}{SC1 Antarctic Geothermal Heat Flux}
 da \href{https://www.scar.org/}{Scientific Committee on Antarctic Research} (SCAR).
-Atualmente, estamos investigando o uso da camada equivalente
-(seção~\ref{sec_eql}) para a junção de dados de satélite e aeromagnéticos
-adquiridos em diferentes épocas.
-Mais especificamente, estamos elaborando uma combinação dos métodos de
-\citet{Reis2020} e \citet{Soler2021}.
-Nosso trabalho nesta linha de pesquisa ainda está em estágio inicial.
-Esperamos elaborar a primeira publicação da tese da India em meados de 2023.
+Nosso objetivo é utilizar a técnica das fontes equivalentes para melhorar
+a integração dos dados aeromagnéticos Antárticos e mesclá-los com dados de
+satélite.
+Para tanto, necessitaremos de novos métodos de fontes equivalentes eficientes
+para dados magnéticos que possam lidar com a curvatura da Terra.
+Também será necessário investigar cada aerolevantamento para determinar sua
+confiabilidade e se há a necessidade de reprocessá-los.
+
+Atualmente, a India já realizou uma adaptação do método de \citet{Soler2021}
+para dados magnéticos.
+Com isso, fomos capazes de modelar centenas de milhares de dados com
+espaçamento variável entre as linhas de vôo.
+Também fomos capazes de transformar os dados de anomalia magnética em dados de
+amplitude do campo anômalo, que é menos sensível a variações na direção de
+magnetização da crosta e pode auxiliar na determinação do fluxo geotermal.
+Seus resultados serão submetidos como um preprint em breve.
+Seus próximos passos serão na investigação dos diversos aerolevantamentos
+individuais em colaboração com o pesquisador Tom Jordan da British Antarctic
+Survey.
+Além disso, o aluno \ArthurLink{} está adaptando o método da India para
+coordenadas esféricas, o que será necessário para aplicá-lo a toda a compilação
+de dados Antárticos.
+Esperamos obter os primeiros resultados até o final de 2025.
 
 
 \begin{fancyenum}{\faBullseye}{Objetivos}
+  \item Reprocessar e harmonizar os dados aeromagnéticos da Antártica.
   \item Produzir uma malha regular de dados da amplitude do campo magnético
     uniforme para a Antártica, combinando dados de satélite e aeromagnéticos.
   \item Investigar o uso de métodos novos de separação regional-residual
     \citep[e.g.,][]{Florio2022} para remover o efeito de fontes rasas dos dados
     antárticos.
-  \item Desenvolver um método para estimar a profundidade da isoterma de Curie
-    através da inversão da contribuição regional dos dados de amplitude do
-    campo magnético.
 \end{fancyenum}
 
 
