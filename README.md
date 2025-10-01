@@ -15,7 +15,7 @@ As versões abaixo foram utilizadas em diferentes concursos:
   Utilizado no concurso de títulos e provas para obtenção do título de Livre
   Docente junto ao Departamento de Geofísica do Instituto de Astronomia,
   Geofísica e Ciências Atmosféricas da Universidade de São Paulo (Edital
-  ATAc-IAG/005/2025). **Em progresso.**
+  ATAc-IAG/005/2025). **Fui aprovado no concurso e recebi o título de Livre Docente.**
 * **2023** (doi:[10.6084/m9.figshare.28737794](https://doi.org/10.6084/m9.figshare.28737794)):
   Utilizado no concurso público de títulos e provas para cargo de Professor
   Doutor junto ao Departamento de Geofísica do Instituto de Astronomia,
