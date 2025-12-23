@@ -1,6 +1,6 @@
 # Memorial circunstanciado
 
-Esse é meu memorial escrito para ao longo dos anos para diversos concursos
+Esse é meu memorial escrito ao longo dos anos para diversos concursos
 públicos para posições acadêmicas.
 
 O documento foi criado usando LaTeX e um modelo próprio. Sinta-se a vontade
