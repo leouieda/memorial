@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> **This repository has moved to Codeberg** and will no longer be updated here: https://codeberg.org/leouieda/memorial
+
+---
+
 # Memorial circunstanciado
 
 Esse é meu memorial escrito ao longo dos anos para diversos concursos
